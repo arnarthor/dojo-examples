@@ -1,0 +1,24 @@
+{
+  "name": "playground",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "export BS_CMT_POST_PROCESS_CMD=\"gentype\" && bsb -make-world",
+    "watch": "export BS_CMT_POST_PROCESS_CMD=\"gentype\" && bsb -clean-world -make-world -w"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.3.3",
+    "@babel/node": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-es2015": "7.0.0-beta.53",
+    "bs-platform": "^4.0.18"
+  },
+  "dependencies": {
+    "gentype": "^2.11.0"
+  }
+}
